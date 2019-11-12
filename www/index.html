@@ -4,13 +4,17 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript">
     document.addEventListener("deviceready", function() {
+      var map;
+      // If you click the button to add plugin
+      var add_button = document.getElementById("add_button");
+      add_button.addEventListener("click", function() {
+            var map_div = document.getElementById("map_canvas");
+            map = plugin.situm.wayfinding.situmWayfindingPlugin.load(map_div, function(success) {},function(error) {});
+      });
 
-      var map_div = document.getElementById("map_canvas");
-      var map = plugin.situm.wayfinding.situmWayfindingPlugin.load(map_div, function(success) {},function(error) {});
-                              
-      // If you click the button remove map
-      var button = document.getElementById("button");
-      button.addEventListener("click", function() {
+      // If you click the button to remove plugin
+      var remove_button = document.getElementById("remove_button");
+      remove_button.addEventListener("click", function() {
             plugin.situm.wayfinding.situmWayfindingPlugin.unload(map, function(success) {},function(error) {});
       });
 
@@ -34,6 +38,7 @@
   <body>
     <div id="map_canvas">
     </div>
-    <button id="button">Remove</button>
+    <button id="add_button">Add</button>
+    <button id="remove_button">Remove</button>
   </body>
 </html>
