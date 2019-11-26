@@ -14,14 +14,14 @@
   "license": "Apache-2.0",
   "dependencies": {
     "cordova-android": "^8.1.0",
-    "cordova-ios": "^5.0.1"
+    "cordova-ios": "^5.1.0",
+    "cordova-plugin-googlemaps": "^2.6.2",
+    "situm-cordova-plugin-wayfinding": "0.0.4"
   },
-  "devDependencies": {
-    "cordova-plugin-whitelist": "^1.3.4"
-  },
+  "devDependencies": {},
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {}
+      "situm-cordova-plugin-wayfinding": {}
     },
     "platforms": [
       "android",

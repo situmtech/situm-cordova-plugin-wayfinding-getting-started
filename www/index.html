@@ -5,11 +5,17 @@
     <script type="text/javascript">
     document.addEventListener("deviceready", function() {
       var map;
+      let librarySettings = {
+                'dashboardUrl': 'https://dashboard.situm.es',
+                'hasSearchView': true,
+                'searchViewPlaceholder': 'Cordova Wayfinding',
+                'useDashboardTheme': false
+              };
       // If you click the button to add plugin
       var add_button = document.getElementById("add_button");
       add_button.addEventListener("click", function() {
             var map_div = document.getElementById("map_canvas");
-            map = plugin.situm.wayfinding.situmWayfindingPlugin.load(map_div, function(success) {},function(error) {});
+            map = plugin.situm.wayfinding.situmWayfindingPlugin.load(map_div, librarySettings, function(success) {},function(error) {});
       });
 
       // If you click the button to remove plugin
