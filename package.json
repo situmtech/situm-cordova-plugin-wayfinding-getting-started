@@ -12,10 +12,20 @@
   ],
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
-  "dependencies": {},
+  "dependencies": {
+    "cordova-android": "^8.1.0",
+    "cordova-ios": "^5.1.0",
+    "cordova-plugin-googlemaps": "^2.6.2",
+    "situm-cordova-plugin-wayfinding": "0.0.4"
+  },
   "devDependencies": {},
   "cordova": {
-    "plugins": {},
-    "platforms": []
+    "plugins": {
+      "situm-cordova-plugin-wayfinding": {}
+    },
+    "platforms": [
+      "android",
+      "ios"
+    ]
   }
 }
