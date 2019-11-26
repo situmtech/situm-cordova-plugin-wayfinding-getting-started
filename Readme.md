@@ -42,9 +42,7 @@ Add your desired platforms with:
 
     $> cordova platform add android	
 
-Use Cordova CLI utility to install the plugin
-
-    $> cordova plugin add cordova-plugin-situmwayfinding
+The plugin will be automatically installed.
 
 Afterwards, provide the System Permission and API keys defined in [Cordova Plugin Wayfinding]().
 
