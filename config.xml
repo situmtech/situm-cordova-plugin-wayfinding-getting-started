@@ -32,7 +32,10 @@
     <edit-config file="*-Info.plist" mode="merge" target="NSLocationAlwaysAndWhenInUseUsageDescription">
         <string>need location access to find things nearby</string>
     </edit-config>
-    <edit-config file="*-Info.plist" mode="merge" target="NSBluetoothAlwaysUsageDescription">
+    <edit-config file="*-Info.plist" mode="merge" target="NSBluetoothPeripheralUsageDescription">
+        <string>need bluetooth access to find things nearby</string>
+    </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSBluetoothAlwaysUsageDescription">
         <string>need bluetooth access to find things nearby</string>
     </edit-config>
 </widget>
