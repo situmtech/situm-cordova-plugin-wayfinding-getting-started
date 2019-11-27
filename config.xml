@@ -21,21 +21,22 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+        <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
+            <string>need location access to find things nearby</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSLocationAlwaysAndWhenInUseUsageDescription">
+            <string>need location access to find things nearby</string>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" target="NSBluetoothPeripheralUsageDescription">
+            <string>need bluetooth access to find things nearby</string>
+        </edit-config>
+            <edit-config file="*-Info.plist" mode="merge" target="NSBluetoothAlwaysUsageDescription">
+            <string>need bluetooth access to find things nearby</string>
+        </edit-config>
     </platform>
     <preference name="GOOGLE_MAPS_IOS_API_KEY" value="YOUR_GOOGLE_MAPS_IOS_KEY" />
     <preference name="SITUM_USER" value="YOUR_SITUM_USER" />
     <preference name="SITUM_API_KEY" value="YOUR_SITUM_APIKEY" />
     <preference name="SITUM_BUILDING_ID" value="YOUR_BUILDING_ID" />
-    <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
-        <string>need location access to find things nearby</string>
-    </edit-config>
-    <edit-config file="*-Info.plist" mode="merge" target="NSLocationAlwaysAndWhenInUseUsageDescription">
-        <string>need location access to find things nearby</string>
-    </edit-config>
-    <edit-config file="*-Info.plist" mode="merge" target="NSBluetoothPeripheralUsageDescription">
-        <string>need bluetooth access to find things nearby</string>
-    </edit-config>
-        <edit-config file="*-Info.plist" mode="merge" target="NSBluetoothAlwaysUsageDescription">
-        <string>need bluetooth access to find things nearby</string>
-    </edit-config>
+
 </widget>
