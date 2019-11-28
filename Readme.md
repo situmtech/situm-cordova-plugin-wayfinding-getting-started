@@ -36,11 +36,11 @@ Initial View               | SitumWayfinding Loaded     | Navigation
 
 ## App configuration(#app-configuration)
 
-Add your desired platforms with: 
+Add your desired platforms with:
 
     $> cordova platform add ios
 
-    $> cordova platform add android	
+    $> cordova platform add android
 
 The plugin will be automatically installed.
 
@@ -60,7 +60,7 @@ You can take a look to [index.html]() to see how load and unload methods are inv
           'searchViewPlaceholder': 'Cordova Wayfinding',
           'useDashboardTheme': false
         };
-        
+
       var add_button = document.getElementById("add_button");
       add_button.addEventListener("click", function() {
             var map_div = document.getElementById("map_canvas");
@@ -76,6 +76,11 @@ You can take a look to [index.html]() to see how load and unload methods are inv
             plugin.situm.wayfinding.situmWayfindingPlugin.unload(map, function(success) {},function(error) {});
       });
 ```
+
+## Limitations
+
+* Using the "Go back" button in iOS will block the module for the user. It will be fixed in coming releases.
+* The methods load and unload should be called in that order and only once. Multiple calls to the same method without calling the other first will result in unexpected failure.
 
 ## License
 
