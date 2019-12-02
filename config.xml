@@ -34,6 +34,7 @@
             <string>need bluetooth access to find things nearby</string>
         </edit-config>
     </platform>
+    <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="YOUR_GOOGLE_MAPS_ANDROID_KEY" />
     <preference name="GOOGLE_MAPS_IOS_API_KEY" value="YOUR_GOOGLE_MAPS_IOS_KEY" />
     <preference name="SITUM_USER" value="YOUR_SITUM_USER" />
     <preference name="SITUM_API_KEY" value="YOUR_SITUM_APIKEY" />
