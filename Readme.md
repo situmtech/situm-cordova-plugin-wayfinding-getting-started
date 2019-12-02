@@ -98,7 +98,7 @@ You can take a look to [index.html](https://github.com/situmtech/situm-cordova-p
 ## Limitations
 
 * Using the "Go back" button in iOS will block the module for the user. It will be fixed in coming releases.
-* The methods load and unload should be called in that order and only once. Multiple calls to the same method without calling the other first will result in unexpected failure.
+* The buttons "Add" and "Remove" should be pressed in that order and only once. Repeated touchs to the same button without pressing the other first will result in unexpected failure.
 
 ## License
 
