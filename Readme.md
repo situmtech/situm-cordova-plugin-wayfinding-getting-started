@@ -2,7 +2,7 @@
 
 ## Description
 
-This sample app has been designed to allow you test [SitumWayfinding Plugin for Cordova](https://github.com/mapsplugin/cordova-plugin-situmwayfinding).
+This sample app has been designed to allow you test [SitumWayfinding Plugin for Cordova](https://github.com/situmtech/situm-cordova-plugin-wayfinding).
 
 It is a simple app with two buttons:
 
@@ -10,7 +10,7 @@ It is a simple app with two buttons:
 * The **Remove** button removes SitumWayfinding from the screen and stops positioning and routing processes.
 
 Once the SitumWayfinding view is loaded into screen you will be able to:
-  1. Load a Situm Map with [the building specified in config.xml](#app-configuration). This building has to be defined in your account.
+  1. Load a Situm Map with [the building specified in config.xml](https://github.com/situmtech/situm-cordova-plugin-wayfinding-getting-started/blob/master/config.xml). This building has to be defined in your account.
   2. Start the positioning in the specified building.
   3. Start navigation in the specified building.
 
@@ -20,35 +20,53 @@ Initial View               | SitumWayfinding Loaded     | Navigation
 :-------------------------:|:-------------------------: |:-------------------------:
 ![](images/start.png?raw=true "Initial view")  |  ![SitumWayfinding Loaded](images/loaded.png?raw=true "SitumWayfindingLoaded") | ![Navigation](images/navigation.png?raw=true "Navigation")
 
+## Setup your Situm account
 
+In this tutorial, we will guide you step by step to set up your first Cordova application using Cordova Situm Plugin. Before starting to write code, we recommend you to set up an account in our [Dashboard](https://dashboard.situm.es), retrieve your API KEY and configure your first building.
+
+1. Go to the [sign in form](http://dashboard.situm.es/accounts/register) and enter your username and password to sign in.
+
+2. Go to the [account section](https://dashboard.situm.es/accounts/profile) and on the bottom, click on “generate one” to generate your API KEY.
+
+3. Go to the [buildings section](http://dashboard.situm.es/buildings) and create your first building.
+
+4. Download Situm Mapping Tool in Play Store (Only Android devices) and calibrate your building. Check out our user guide for detailed information.
+
+5. You are ready for building your own Cordova applications. Please check next steps about requirements
 
 ## Installing pre-requisites
 
 ### Configure cordova:
 
-* https://cordova.apache.org/docs/en/latest/guide/cli/index.html#installing-the-cordova-cli
+* [Install Cordova CLI](https://cordova.apache.org/docs/en/latest/guide/cli/index.html#installing-the-cordova-cli)
+* [Cordova Docs](https://cordova.apache.org/docs/en/latest/guide/overview/index.html)
+* [Hello world Cordova example](https://cordova.apache.org/docs/en/latest/guide/cli/index.html#add-platforms)
 
 ### Cordova requirements:
 
 * [Android](https://cordova.apache.org/docs/en/latest/guide/platforms/android/#installing-the-requirements)
-* [iOS](https://cordova.apache.org/docs/en/latest/guide/platforms/android/#installing-the-requirements)
-* [Cocoapods](https://cocoapods.org/) (Only if you need your application to run in iOS devices)
+* [iOS](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/#installing-the-requirements)
+* [Cocoapods](https://guides.cocoapods.org/using/getting-started.html) (Only if you need your application to run in iOS devices)
 
 ## App configuration(#app-configuration)
 
-Add your desired platforms with:
+Inside the example directory, add your desired platforms with:
+
+    $> cd <PATH_TO_EXAMPLE>/situm-cordova-plugin-wayfinding-getting-started/
 
     $> cordova platform add ios
 
     $> cordova platform add android
 
-The plugin will be automatically installed.
+The plugin will be automatically installed when you add the platforms. If removed at any moment, it can be add again with:
 
-Afterwards, provide the System Permission and API keys defined in [Cordova Plugin Wayfinding]().
+    $> cordova plugin add situm-cordova-plugin-wayfinding
+
+Afterwards, provide the System Permission and API keys defined in [Cordova Plugin Wayfinding](https://github.com/situmtech/situm-cordova-plugin-wayfinding#system-permission).
 
 ## Code Explanation
 
-You can take a look to [index.html]() to see how load and unload methods are invoked.
+You can take a look to [index.html](https://github.com/situmtech/situm-cordova-plugin-wayfinding-getting-started/blob/master/www/index.html) to see how load and unload methods are invoked.
 
 **Load**: When add button is clicked, load SitumWayfinding view in map_div.
 
