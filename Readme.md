@@ -20,12 +20,6 @@ Initial View               | SitumWayfinding Loaded     | Navigation
 :-------------------------:|:-------------------------: |:-------------------------:
 ![](images/start.png?raw=true "Initial view")  |  ![SitumWayfinding Loaded](images/loaded.png?raw=true "SitumWayfindingLoaded") | ![Navigation](images/navigation.png?raw=true "Navigation")
 
-
-## Submitting Contributions
-
-You will need to sign a Contributor License Agreement (CLA) before making a submission. 
-[Learn more here.](https://situm.com/contributions/)
-
 ## Setup your Situm account
 
 In this tutorial, we will guide you step by step to set up your first Cordova application using Cordova Situm Plugin. Before starting to write code, we recommend you to set up an account in our [Dashboard](https://dashboard.situm.es), retrieve your API KEY and configure your first building.
@@ -105,6 +99,12 @@ You can take a look to [index.html](https://github.com/situmtech/situm-cordova-p
 
 * Using the "Go back" button in iOS will block the module for the user. It will be fixed in coming releases.
 * The buttons "Add" and "Remove" should be pressed in that order and only once. Repeated touchs to the same button without pressing the other first will result in unexpected failure.
+
+
+## Submitting Contributions
+
+You will need to sign a Contributor License Agreement (CLA) before making a submission. 
+[Learn more here.](https://situm.com/contributions/)
 
 ## License
 
