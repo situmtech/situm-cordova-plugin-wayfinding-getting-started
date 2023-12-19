@@ -1,5 +1,9 @@
 # Cordova SitumWayfinding Plugin Sample App
 
+> [!IMPORTANT]  
+> This guide refers to the old version of the Wayfinding module, which is **no longer maintained**. We strongly recommend adopting [MapView](https://developers.situm.com/sdk_documentation/cordova/jsdoc/latest/mapview), the new visual component available at [@situm/cordova](https://github.com/situmtech/cordova) for both Cordova and Capacitor.
+To stay up to date, checkout the [Cordova SDK Changelog](https://situm.com/docs/cordova-sdk-changelog/) and the [example app](https://github.com/situmtech/cordova/tree/master/example) at the public repository.
+
 ## Description
 
 This sample app has been designed to allow you test [SitumWayfinding Plugin for Cordova](https://github.com/situmtech/situm-cordova-plugin-wayfinding).
